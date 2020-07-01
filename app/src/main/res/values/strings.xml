@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Basic Minecraft Quiz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="checkOptionOne">Redstone</string>
+    <string name="checkOptionTwo">Blaze Rod</string>
+    <string name="checkOptionThree">Netherwart</string>
+    <string name="checkOptionFour">Glowstone</string>
+    <string name="submit">Submit</string>
+    <string name="check_question">What items go into a Strength 2 potion?</string>
+    <string name="final_score_placeholder">Final Score: 0</string>
+    <string name="try_again">Try Again</string>
+    <string name="basic_minecraft_trivia">Basic Minecraft Trivia!</string>
+    <string name="rdiOptionThree">The Overworld</string>
+    <string name="rdiOptionTwo">The Nether</string>
+    <string name="rdiOptionOne">The End</string>
+    <string name="rdiQuestion">What dimension do you fight Ghasts?</string>
+    <string name="image_related_to_question_subject">Image related to question subject</string>
+    <string name="enter_answer_here">Enter answer here</string>
+
+    <string name="score">Score: %1$d</string>
+    <string name="question_number">Question Number: %1$d</string>
+    <string name="finalScore0">Have you actually played Minecraft…?\nFinal Score:  %1$d \4</string>
+    <string name="finalscore1">Final Score:  %1$d\\4</string>
+    <string name="retryBestScore">Congrats! Want to go again?</string>
+</resources>

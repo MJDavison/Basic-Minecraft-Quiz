@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6b5b95"
+    tools:context=".RadioButtonActivity">
+
+    <include
+        android:id="@+id/Layout_stats"
+        layout="@layout/fragment_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Layout_stats"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/radioTextViewQuestion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center_horizontal"
+            android:text="@string/rdiQuestion"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioButtonOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rdiOne"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/option_rounded_corner"
+                    android:paddingVertical="8dp"
+                    android:text="@string/rdiOptionOne"
+                    android:textColor="@android:color/black" />
+
+
+                <RadioButton
+                    android:id="@+id/rdiTwo"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/option_rounded_corner"
+                    android:paddingVertical="8dp"
+                    android:text="@string/rdiOptionTwo" />
+
+                <RadioButton
+                    android:id="@+id/rdiThree"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/option_rounded_corner"
+                    android:paddingVertical="8dp"
+                    android:text="@string/rdiOptionThree" />
+
+                <RadioButton
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingVertical="8dp"
+                    android:visibility="invisible" />
+            </RadioGroup>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="#ff7b25"
+                android:onClick="submitRadioButtonAnswer"
+                android:text="@string/submit" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

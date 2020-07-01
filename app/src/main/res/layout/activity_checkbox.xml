@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6b5b95"
+    tools:context=".CheckBoxActivity">
+
+    <include layout="@layout/fragment_header" />
+
+    <TextView
+        android:id="@+id/textView_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center_horizontal"
+        android:paddingVertical="64dp"
+        android:text="@string/check_question"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+    <!-- rounded corner xml sourced from dipali at
+    https://stackoverflow.com/questions/18781902/rounded-corner-for-textview-in-android-->
+
+    <CheckBox
+        android:id="@+id/checkboxOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_question"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/option_rounded_corner"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/checkOptionOne"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:id="@+id/checkboxTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxOne"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/option_rounded_corner"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/checkOptionTwo"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:id="@+id/checkboxThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxTwo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/option_rounded_corner"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/checkOptionThree"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:id="@+id/checkboxFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxThree"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/option_rounded_corner"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/checkOptionFour"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="#ff7b25"
+        android:onClick="submitCheckboxAnswer"
+        android:text="@string/submit"
+        android:textColor="@android:color/black" />
+</RelativeLayout>
+
